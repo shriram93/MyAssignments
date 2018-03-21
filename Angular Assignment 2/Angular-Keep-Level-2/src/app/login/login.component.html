@@ -1,0 +1,14 @@
+<div class="login-c-form-wrapper">
+  <form #loginForm="ngForm" (ngSubmit)="loginSubmit(loginForm)">
+    <mat-card class="login-card">
+      <mat-form-field class="form-full-width">
+        <input trim="blur" matInput placeholder="Username" (focus)="submitMessage=false" type="text" name="username" #userName="ngModel" ngModel>
+      </mat-form-field>
+      <mat-form-field class="form-full-width">
+        <input trim="blur" matInput placeholder="Password" (focus)="submitMessage=false" type="password" name="password" #userPassword="ngModel" ngModel>
+      </mat-form-field>
+      <button type="submit" mat-raised-button color="primary">Login</button>
+      <label class="error-message" [ngClass]="{'invisible': !submitMessage}">{{errorMessage}}</label>
+    </mat-card>
+  </form>
+</div>

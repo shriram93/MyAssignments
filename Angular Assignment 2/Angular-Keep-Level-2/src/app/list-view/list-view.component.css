@@ -1,0 +1,21 @@
+.keep-note-container {
+  margin: 1em;
+}
+
+::ng-deep .mat-grid-tile .mat-figure {
+  display: block !important;
+  /* or whichever you need */
+}
+
+.keep-note-card {
+  margin: 2em;
+}
+
+.note-list {
+  overflow: visible;
+}
+
+.list-title {
+  text-align: center;
+  margin: .5em;
+}

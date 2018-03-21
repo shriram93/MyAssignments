@@ -1,0 +1,28 @@
+<mat-expansion-panel class="expansion-panel">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Take a note
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <form #myForm="ngForm" (submit)="takeNote()">
+    <!-- Input field to enter note title -->
+    <mat-form-field class="form-full-width">
+      <input trim="blur" matInput [(ngModel)]="note.title" (focus)="inputError=false" name="title" placeholder="Title">
+    </mat-form-field>
+    <!-- Input field to enter note description -->
+    <mat-form-field class="form-full-width">
+      <textarea trim="blur" matInput [(ngModel)]="note.text" (focus)="inputError=false" name="text" placeholder="Description"></textarea>
+    </mat-form-field>
+    <!-- Input field to enter note category -->
+    <mat-form-field class="form-select-state">
+      <mat-select placeholder="Select category" (focus)="inputError=false" [(ngModel)]="note.state" name="state">
+        <mat-option *ngFor="let state of noteStates" [value]="state">
+          {{ state }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <!-- Submit button -->
+    <button type="submit" mat-raised-button color="primary">Done</button>
+    <label class="error-message" [ngClass]="{'invisible': !inputError}">{{errorMessage}}</label>
+  </form>
+</mat-expansion-panel>

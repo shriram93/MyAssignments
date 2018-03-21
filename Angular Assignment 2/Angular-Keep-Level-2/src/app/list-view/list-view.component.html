@@ -1,0 +1,17 @@
+<div class="keep-note-container">
+  <!-- Display a grid of not started,started,completed note -->
+  <mat-grid-list [cols]="noteStates.length" gutterSize="1em">
+    <mat-grid-tile class="note-list notStartedNotes">
+      <div class="list-title">Not Started</div>
+      <app-note [note]="note" *ngFor="let note of notStarted" class="keep-note-card"></app-note>
+    </mat-grid-tile>
+    <mat-grid-tile class="note-list startedNotes">
+      <div class="list-title">Started</div>
+      <app-note [note]="note" *ngFor="let note of started" class="keep-note-card"></app-note>
+    </mat-grid-tile>
+    <mat-grid-tile class="note-list completedNotes">
+      <div class="list-title">Completed</div>
+      <app-note [note]="note" *ngFor="let note of completed" class="keep-note-card"></app-note>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

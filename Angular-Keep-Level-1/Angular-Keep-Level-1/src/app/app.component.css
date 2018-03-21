@@ -1,0 +1,42 @@
+.expansion-panel {
+  width: 60vw;
+  margin: 20px auto;
+}
+
+.form-full-width {
+  width: 100%;
+}
+
+.material-card {
+  margin: 20px 10px;
+  position: relative;
+}
+
+.error-message {
+  margin-bottom: 10px;
+  color: #EC212D;
+  display: block;
+}
+
+.http-error-message {
+  margin-top: 10px;
+}
+
+.filler {
+  height: 1vh;
+}
+
+.delete-button {
+  margin-top: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #90A4AE;
+  opacity: .9;
+  box-shadow: 7px 7px 7px #ccc;
+}
+
+.delete-button button {
+  width: 100%;
+  text-align: center;
+}

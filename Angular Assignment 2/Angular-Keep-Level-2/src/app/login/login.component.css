@@ -1,0 +1,24 @@
+.login-c-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.form-full-width {
+  width: 100%;
+}
+
+.error-message {
+  margin: 10px;
+  color: #EC212D;
+  display: block;
+}
+
+.login-card {
+  padding: 5vh;
+}
+
+.invisible {
+  visibility: hidden;
+}

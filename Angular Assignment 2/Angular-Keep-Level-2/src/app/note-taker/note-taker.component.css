@@ -1,0 +1,22 @@
+.expansion-panel {
+  width: 60vw;
+  margin: 20px auto;
+}
+
+.form-full-width {
+  width: 100%;
+}
+
+.error-message {
+  margin: 10px;
+  color: #EC212D;
+  display: block;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.form-select-state {
+  padding-right: 2vw;
+}

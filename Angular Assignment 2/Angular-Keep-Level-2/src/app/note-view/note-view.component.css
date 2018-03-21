@@ -1,0 +1,10 @@
+.keep-note-container {
+  display: flex;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.keep-note-card {
+  margin-left: 10px;
+  margin-top: 10px;
+}

@@ -1,0 +1,34 @@
+<!-- Displaying header component in the view -->
+<app-header></app-header>
+
+<!-- Form panel to enter notes title and description -->
+<mat-expansion-panel class="expansion-panel">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Take a note
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <mat-form-field class="form-full-width">
+    <input matInput [(ngModel)]="currentTitle" (focus)="formValid=true;errMessage=''" name="title" placeholder="Title">
+  </mat-form-field>
+  <mat-form-field class="form-full-width">
+    <textarea matInput [(ngModel)]="currentText" (focus)="formValid=true;errMessage=''" name="text" placeholder="Description"></textarea>
+  </mat-form-field>
+  <label class="error-message" *ngIf="!formValid">Title and Text both are required fields</label>
+  <button mat-raised-button color="primary" (click)="addNote()">Done</button>
+  <label class="http-error-message" *ngIf="errMessage.length > 0 && formValid">Error: {{errMessage}}</label>
+</mat-expansion-panel>
+
+<!-- Creating cards for each message using ngFor directive -->
+<div *ngFor="let note of noteArray;let i = index" class="material-card" (mouseenter)="showDeleteBtn[i]=true" (mouseleave)="showDeleteBtn[i]=false">
+  <mat-card>
+    <span hidden id="NoteId">{{note.id}}</span>
+    <mat-card-title>{{note.title}}</mat-card-title>
+    <mat-card-content>{{note.text}}</mat-card-content>
+    <div class="filler">
+    </div>
+  </mat-card>
+  <div class="delete-button" *ngIf="showDeleteBtn[i]">
+    <button mat-button (click)="deleteNote($event,note)"><fa name="times" size="lg"></fa><span> Delete note</span></button>
+  </div>
+</div>

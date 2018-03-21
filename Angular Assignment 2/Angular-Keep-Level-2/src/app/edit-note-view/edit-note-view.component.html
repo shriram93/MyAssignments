@@ -1,0 +1,23 @@
+<div class="keep-c-note-editor-form">
+  <!-- Displaying title of the note -->
+  <mat-form-field>
+    <input matInput [(ngModel)]="note.title" placeholder="Title" type="text" />
+  </mat-form-field>
+  <!-- Displaying description of the note -->
+  <mat-form-field>
+    <textarea matInput [(ngModel)]='note.text' id='text' placeholder="Textarea"></textarea>
+  </mat-form-field>
+  <!-- Displaying category of the note -->
+  <mat-form-field>
+    <mat-select placeholder="Select category" [(ngModel)]="note.state" name="state">
+      <mat-option *ngFor="let state of noteStates" [value]="state">
+        {{ state }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <!-- Save the changes/Delete the note -->
+  <div class="keep-c-save-btn-wrapper">
+    <button mat-button (click)="deleteNote()">Delete</button>
+    <button mat-button (click)="editNote()">Save</button>
+  </div>
+</div>

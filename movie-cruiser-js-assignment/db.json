@@ -1,0 +1,62 @@
+{
+  "movies": [
+    {
+      "id": "0",
+      "title": "The Maze Runner",
+      "poster": "maze-runner.jpg",
+      "overview": "Set in a post-apocalyptic world, young Thomas is deposited in a community of boys after his memory is erased, soon learning they're all trapped in a maze that will require him to join forces with fellow “runners” for a shot at escape.",
+      "user_score": "70"
+    },
+    {
+      "id": "1",
+      "title": "It",
+      "poster": "it.jpg",
+      "overview": "In a small town in Maine, seven children known as The Losers Club come face to face with life problems, bullies and a monster that takes the shape of a clown called Pennywise.",
+      "user_score": "70"
+    },
+    {
+      "id": "2",
+      "title": "Coco",
+      "poster": "coco.jpg",
+      "overview": "Despite his family’s baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history.",
+      "user_score": "77"
+    },
+    {
+      "id": "3",
+      "title": "Batman vs Superman",
+      "poster": "batman-vs-superman.jpg",
+      "overview": "Fearing the actions of a god-like Super Hero left unchecked, Gotham City’s own formidable, forceful vigilante takes on Metropolis’s most revered, modern-day savior, while the world wrestles with what sort of hero it really needs. And with Batman and Superman at war with one another, a new threat quickly arises, putting mankind in greater danger than it’s ever known before.",
+      "user_score": "68"
+    },
+    {
+      "id": "4",
+      "title": "Suicide Squad",
+      "poster": "suicide-squad.jpg",
+      "overview": "From DC Comics comes the Suicide Squad, an antihero team of incarcerated supervillains who act as deniable assets for the United States government, undertaking high-risk black ops missions in exchange for commuted prison sentences.",
+      "user_score": "59"
+    },
+    {
+      "id": "5",
+      "title": "The Amazing Spider-Man",
+      "poster": "amazing-spiderman.jpg",
+      "overview": "Peter Parker is an outcast high schooler abandoned by his parents as a boy, leaving him to be raised by his Uncle Ben and Aunt May. Like most teenagers, Peter is trying to figure out who he is and how he got to be the person he is today. As Peter discovers a mysterious briefcase that belonged to his father, he begins a quest to understand his parents' disappearance – leading him directly to Oscorp and the lab of Dr. Curt Connors, his father's former partner. As Spider-Man is set on a collision course with Connors' alter ego, The Lizard, Peter will make life-altering choices to use his powers and shape his destiny to become a hero.",
+      "user_score": "65"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "2",
+      "title": "Coco",
+      "poster": "coco.jpg",
+      "overview": "Despite his family’s baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history.",
+      "user_score": "77"
+    },
+    {
+      "id": "3",
+      "title": "Batman vs Superman",
+      "poster": "batman-vs-superman.jpg",
+      "overview": "Fearing the actions of a god-like Super Hero left unchecked, Gotham City’s own formidable, forceful vigilante takes on Metropolis’s most revered, modern-day savior, while the world wrestles with what sort of hero it really needs. And with Batman and Superman at war with one another, a new threat quickly arises, putting mankind in greater danger than it’s ever known before.",
+      "user_score": "68"
+    }
+  ]
+}

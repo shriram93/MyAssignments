@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <h1>Keep</h1>
+  <span class="spacer"></span>
+  <!-- Display icon to switch to Note/List view based on currnet page -->
+  <span class="view-change-btn" *ngIf="!isLoginPage">
+    <button mat-icon-button  class="switchToNoteView" *ngIf="isNoteView == false;else listview" (click)="changeView()"><mat-icon matTooltip="List view"><fa name="bars" size="lg"></fa></mat-icon></button>
+    <ng-template #listview>
+      <button mat-icon-button class="switchToListView"  (click)="changeView()"><mat-icon matTooltip="Grid view"><fa name="th-large" size="lg"></fa></mat-icon></button>
+    </ng-template>
+  </span>
+</mat-toolbar>

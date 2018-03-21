@@ -1,0 +1,40 @@
+.movies, .favorites {
+  margin: 6em auto;
+}
+
+.heading {
+  font-size: 2em;
+}
+
+.carousel-cell {
+  width: 100%;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+/* position dots up a bit */
+
+.flickity-page-dots {
+  bottom: -22px;
+}
+
+/* dots are lines */
+
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.movie-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.no-favorites-banner {
+  text-align: center;
+}
